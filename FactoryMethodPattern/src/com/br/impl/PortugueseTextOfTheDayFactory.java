@@ -1,17 +1,17 @@
 package com.br.impl;
 
-import com.br.impl.model.PortugueseText;
+import com.br.impl.model.PortugueseTextOfTheDay;
 import com.br.interfaces.iTextOfTheDay;
 import com.br.interfaces.iTextOfTheDayFactory;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class PortugueseTextFactory implements iTextOfTheDayFactory {
+public class PortugueseTextOfTheDayFactory implements iTextOfTheDayFactory {
 
     @Override
     public iTextOfTheDay createText(String text) {
-        PortugueseText portugueseText = new PortugueseText();
+        PortugueseTextOfTheDay portugueseText = new PortugueseTextOfTheDay();
         portugueseText.setText(getPreFix() + text);
         return portugueseText;
     }

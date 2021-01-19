@@ -2,7 +2,7 @@ package com.br.impl.model;
 
 import com.br.interfaces.iTextOfTheDay;
 
-public class EnglishText implements iTextOfTheDay {
+public class EnglishTextOfTheDay implements iTextOfTheDay {
 
     private String text;
 
